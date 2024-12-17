@@ -10,7 +10,6 @@ bool gameOver;
 enum eDirection { Stop = 0, Left, Right, Up, Down } dir;
 
 int main() {
-    setlocale(LC_ALL, "RU");
     gameOver = false;
     dir = Stop;
     x = width / 2; y = height / 2;
@@ -35,7 +34,7 @@ int main() {
             }
             cout << endl;
         }
-        for (int i = 0; i < width + 2; i++) cout << "_"; cout << "\nСчет: " << score << endl; //низ
+        for (int i = 0; i < width + 2; i++) cout << "_"; cout << "\nrecord: " << score << endl; //низ
 
         if (_kbhit()) { //управ змейкой
             switch (_getch()) {
